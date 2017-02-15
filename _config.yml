@@ -5,6 +5,7 @@ description: >
   Raspberry Pi, and inspired by the 18th century chess playing machine, the Mechanical Turk.
 baseurl: ""
 url: "http://www.raspberryturk.com"
+author: Joey Meyer
 twitter_username: joey_meyer
 github_username:  joeymeyer
 markdown: kramdown
