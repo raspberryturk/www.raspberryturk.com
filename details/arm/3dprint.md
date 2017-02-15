@@ -5,7 +5,7 @@ layout: page
 
 # Introduction
 
-Actobotics are structural and motion components for robotics projects. The components are made out of high grade aluminum or stainless steel and all use standardized sizes, and connect with ease, a lot like legos. I bought all of my Actobotic parts through [ServoCity](https://www.servocity.com/actobotics), who were incredibly helpful throughout the process when I had questions.
+Actobotics are structural and motion components for robotics projects. The components are made out of high grade aluminum or stainless steel and all use standardized sizes, and connect with ease, a lot like legos. I bought all of my Actobotic parts for the Raspberry Turk through [ServoCity](https://www.servocity.com/actobotics), who were incredibly helpful throughout the process when I had questions.
 
 Actobotics work extremely well when used with other Actobotics components, but not always with other products. I ran into this problem when trying to use Dynamixel AX-12A servos with the arm made out of Actobotics. There were two problems:
 
