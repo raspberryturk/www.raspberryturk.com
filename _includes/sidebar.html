@@ -1,0 +1,23 @@
+<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="{{ site.BASE_PATH }}/">
+		<img src="//www.gravatar.com/avatar/{{site.email_md5}}?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
+    </h3>
+</header>
+
+{% if site.description %}
+<div id="bio" class="text-center">
+	{{ site.description }}
+</div>
+{% endif %}
+
+<ul>
+	<a href="https://github.com/joeymeyer/raspberryturk"><li>Github</li></a>
+	<a href="/faq.html"><li>FAQ</li></a>
+	<a href="/aboutme.html"><li>About Me</li></a>
+</ul>
+
+<!-- sidebar.html end -->

@@ -1,5 +1,6 @@
 title: Raspberry Turk
 email: contact@joeymeyer.com
+email_md5: d4632c9b35d2eeefde9e50190da81994
 description: >
   The Raspberry Turk is a robot that can play chess—it's entirely open source, based on
   Raspberry Pi, and inspired by the 18th century chess playing machine, the Mechanical Turk.
