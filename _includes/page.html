@@ -1,5 +1,11 @@
 <div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+	{% include image class="page-header-image" name=page.image width="100%" %}
+  <h1>{{ page.title }}{% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
 </div>
-
-{{ content }}
+<div class="page-body">
+	{{ content }}
+	{% if page.next_url %}
+	<br/>
+	<center><span>Click <a href="{{ page.next_url }}">here</a> to learn about {{ page.next_topic }} next.</span></center>
+	{% endif %}
+</div>
