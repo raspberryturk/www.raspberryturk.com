@@ -1,0 +1,9 @@
+{% include notebook_header.html filename=page.filename url=page.url %}
+
+<div class="page-body">
+	{{ content }}
+	{% if page.github %}
+	<br/>
+	<center><span>The full source of this notebook <a href="{{ page.github }}">can be found on GitHub</a>.</span></center>
+	{% endif %}
+</div>
