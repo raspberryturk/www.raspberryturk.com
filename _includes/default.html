@@ -21,6 +21,9 @@
 	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
 
 	<!-- Le fav and touch icons -->
 	<!-- Update these with your own images
@@ -46,19 +49,15 @@
 		{% include sidebar.html %}
 	</div>
 
-	<div class="col-sm-9 col-sm-offset-3">
+	<div id="page-content" class="col-sm-9 col-sm-offset-3">
 		{{ content }}
 
 		<footer>
 			<hr/>
 			<p>
-				<center>&copy; {{ site.time | date: '%Y' }} <a href="/aboutme.html">{{ site.author }}</a>. The code for this website is open source and <a href="https://github.com/raspberryturk/www.raspberryturk.com">hosted on Github</a>.</center>
+				<center>&copy; {{ site.time | date: '%Y' }} <a href="/aboutme.html">{{ site.author }}</a>. The code for this website is open source and <a href="{{ site.website_github_repo }}">hosted on Github</a>.</center>
 			</p>
 		</footer>
 	</div>
-
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
 </body>
 </html>
