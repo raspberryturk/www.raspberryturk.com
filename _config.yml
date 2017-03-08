@@ -9,6 +9,8 @@ url: "http://www.raspberryturk.com"
 author: Joey Meyer
 twitter_username: joey_meyer
 github_username:  joeymeyer
+raspberryturk_github_repo: https://github.com/joeymeyer/raspberryturk
+website_github_repo: https://github.com/raspberryturk/www.raspberryturk.com
 markdown: kramdown
 theme: minima
 gems:
