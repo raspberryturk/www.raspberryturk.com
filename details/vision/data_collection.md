@@ -1,15 +1,21 @@
 ---
 title: Data Collection
 layout: page
+image: pawnmosaic.jpg
+next_url: /details/vision/camera_calibration.html
+next_topic: how the Raspberry Turk converts it's camera input into a usable form
 ---
 
-_Same logo image that is on the kaggle dataset_
-
 # Introduction
+---
 
 The [vision](/details/vision.html) aspect of the Raspberry Turk is based on a large dataset which consists of overhead images and the associated board state for each image. This dataset is publicly [available](https://www.kaggle.com/joeymeyer/datasets) on Kaggle, released under the [(CC BY-SA 4.0) license](https://creativecommons.org/licenses/by-sa/4.0/).
 
+<center>{% include image name="collection.gif" %}</center>
+{% include caption txt="Collection of a previous dataset over several hours." %}
+
 # Collection
+---
 
 Collection occured over several hours as I sat moving pieces very slightly. I took roughly 4 images of each piece in each square, in a different position/rotation in the square, and under different lighting conditions. Each frame captured includes:
 
@@ -29,6 +35,8 @@ Collection occured over several hours as I sat moving pieces very slightly. I to
 | Black Queen | 2    			|
 | Black King | 1     			|
 
+---
+
 The [`collection.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/data/collection.py?at=master&fileviewer=file-view-default) script provides a simple GUI for capturing chessboard frames and associated [board FENs](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation).
 ```bash
 $ python -m raspberryturk.embedded.data.collection --help
@@ -46,15 +54,22 @@ optional arguments:
   -s SEED, --seed SEED  Random seed to initialize board.
 ```
 
-_Animation of moving pieces and rotating pieces_
+<center>{% include image name="collectionscreen.jpg" %}</center>
+{% include caption txt="Capturing a chessboard image via <code>collection.py</code> window." %}
 
 # Raw Data
+---
 
 The [`collection.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/data/collection.py?at=master&fileviewer=file-view-default) script produces a series of folders which each contain 480x480px images and a `board.fen` file.
 
-_Image of folder structure containing multiple images and board.fen with arrows to the actual image and of the board FEN_
+<center>{% include image name="rawdatafile.png" %}</center>
+{% include caption txt="Folder structure of raw collected data." %}
+<center>{% include image name="rawcapture.png" %}</center>
+{% include caption txt="<code>1481337643.jpg</code>" %}
+<center><code>board.fen:</code><pre><a href="https://en.lichess.org/editor/p1pqnRrP/2bB1N2/2NP1pRp/1PP2nrQ/2B2P1p/1K3p2/1QqkPp2/PpbP4">p1pqnRrP/2bB1N2/2NP1pRp/1PP2nrQ/2B2P1p/1K3p2/1QqkPp2/PpbP4</a></pre></center>
 
 # Interim
+---
 
 The [`process_raw.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/core/data/process_raw.py?at=master&fileviewer=file-view-default) script will take the full set of images and board FENs collected with collection.py and slice them up into labeled folders of individual 60x60px images. The script keeps track of which board images have been processed, so the next time the script is run it will only process newly captured images.
 
@@ -79,9 +94,19 @@ optional arguments:
                       target_path and reprocess everything.
 ```
 
-_Image of full board pointing to 64 slices images with an arrow to folder structure_
+<center>{% include image name="interimdatafile.png" %}</center>
+{% include caption txt="Folder structure of interim data." %}
+<center>
+	{% include image name="rawcapture.png" width="20%" %}
+	{% include arrow %}
+	{% include image name="rawcapturesliced.png" width="27%" %}
+	{% include arrow %}
+	{% include image name="knightf7.jpg" width="13%" %}
+</center>
+{% include caption txt="Process from raw capture data to individual labeled squares (orange, knight, f7, etc)." %}
 
 # Processed
+---
 
 The final step is to produce a complete encapsulated dataset that can be imported using [`np.load`](https://docs.scipy.org/doc/numpy-1.12.0/reference/generated/numpy.load.html). Each dataset contains `X_train`, `X_val`, `y_train`, `y_val`, and `zca` (if the dataset is [ZCA whitened](http://ufldl.stanford.edu/wiki/index.php/Whitening#ZCA_Whitening)) and can be customized in a number of ways as described below.
 
@@ -118,6 +143,80 @@ optional arguments:
   -z, --zca             ZCA whiten dataset.
 ```
 
-Datasets can be created for different purposes. For example, in the [`chess_piece_presence.ipynb`](/notebooks/chess_piece_presence.html) notebook, the dataset included color images with white/black/empty as the label. In the [`chess_piece_classification.ipynb`](/notebooks/chess_piece_classification.html) notebook, the images are grayscale, the features are preprocessed using ZCA whitening, and the labels are king/queen/rook/bishop/knight/pawn.
+Datasets can be created for different purposes. For example, in the [`chess_piece_presence.ipynb`](/notebooks/chess_piece_presence.html) notebook, the dataset included color images with white/black/empty as the label. In the [`chess_piece_classification.ipynb`](/notebooks/chess_piece_classification.html) notebook, the images are grayscale, the features are preprocessed using ZCA whitening, and the labels are queen/rook/bishop/knight.
+
+Example usage:
+```bash
+$ python -m raspberryturk.core.data.create_dataset ~/Data/raspberryturk/interim/ promotable_piece ~/Data/raspberryturk/processed/example_dataset.npz --rotation --grayscale --one_hot --sample=0.3 --zca
+```
+```python
+Jupyter console 5.0.0
+
+Python 2.7.13 |Continuum Analytics, Inc.| (default, Dec 20 2016, 23:09:15) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 5.1.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+
+In [1]: from raspberryturk.core.data.dataset import Dataset
+
+In [2]: d = Dataset.load_file('/home/joeymeyer/Data/raspberryturk/processed/example_dataset.npz')
+
+In [3]: print(d.metadata)
+{
+  "base_path": "/home/joeymeyer/Data/raspberryturk/interim", 
+  "encoding_function": "promotable_piece", 
+  "equalize_classes": false, 
+  "filename": "/home/joeymeyer/Data/raspberryturk/processed/example_dataset.npz", 
+  "grayscale": true, 
+  "one_hot": true, 
+  "rotation": true, 
+  "sample": 0.3, 
+  "test_size": 0.2, 
+  "zca": true
+}
+
+In [4]: import numpy as np
+
+In [5]: np.set_printoptions(precision=4)
+
+In [6]: print(d.X_train.shape)
+(4812, 3600)
+
+In [7]: print(d.X_train)
+[[-0.6132 -0.374  -0.4225 ...,  0.2388  0.5081  1.2592]
+ [-2.3457  0.9484  1.4573 ...,  0.3943  0.8132  1.506 ]
+ [-1.8006 -0.4805 -0.3776 ..., -0.1239  0.071   0.7684]
+ ..., 
+ [-2.2504  0.5313  1.2553 ..., -0.0724  0.2431  0.9375]
+ [-1.8922 -0.6476 -0.6249 ...,  0.349   0.5621  0.3087]
+ [-1.6208  0.4695  0.1789 ...,  0.8657  0.931   0.9377]]
+
+In [8]: print(d.y_train.shape)
+(4812, 4)
+
+In [9]: print(d.y_train)
+[[1 0 0 0]
+ [1 0 0 0]
+ [1 0 0 0]
+ ..., 
+ [0 1 0 0]
+ [0 0 0 1]
+ [0 0 1 0]]
+
+In [10]: print(d.X_val.shape)
+(1203, 3600)
+
+In [11]: print(d.y_val.shape)
+(1203, 4)
+
+In [12]: print(d.zca.shape)
+(3600, 3600)
+
+```
 
 _Table/image showing the contents of a dataset_

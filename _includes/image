@@ -1,9 +1,10 @@
-{% capture imagePath %}/assets/{{ include.name }}{% endcapture %}
+{% capture imagePath %}/assets/img/{{ include.name }}{% endcapture %}
+{% capture cls %}{% if include.class %}{{ include.class }}{% else %}page-image{% endif %}{% endcapture %}
 {% if include.caption %}
-<figure>
-	<img src="{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+<figure class="{{ cls }}">
+	<img src="{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} style="max-width: {{ include.width }}" {% endif %}/>
 	<figcaption>{{ include.caption }}</figcaption>
 </figure>
 {% else %}
-<img src="{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+<img class="{{ cls }}" src="{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} style="max-width: {{ include.width }}" {% endif %}/>
 {% endif %}

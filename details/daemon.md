@@ -1,9 +1,13 @@
 ---
 title: Daemon
 layout: page
+image: raspberrypi.jpg
+next_url: /details/ai.html
+next_topic: how the AI behind the Raspberry Turk works
 ---
 
 # Introduction
+---
 
 The Raspberry Turk runs on the Raspberry Pi in a daemon process called [`raspberryturkd`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/raspberryturkd.py?at=master&fileviewer=file-view-default). It is based on [`python-daemon`](https://pypi.python.org/pypi/python-daemon), which handles setting up stdin/stdout/stderr, easy signal handling, running a single process using a PID lock file, detaching the process to run in the background, and various other helpful features. The deamon process is controlled through a helpful script located in the [`__main__.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/__main__.py?at=master&fileviewer=file-view-default) file of the project. This script is installed via [`setup.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/setup.py?at=master&fileviewer=file-view-default) as a console script entry point.
 
@@ -22,6 +26,7 @@ optional arguments:
 ```
 
 # Agent
+---
 
 The [`raspberryturkd`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/raspberryturkd.py?at=master&fileviewer=file-view-default) is responsible for running a perception/action sequence in a loop until it encounters an interrupt signal. The perception/action sequence exists in [`agent.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/agent.py?at=master&fileviewer=file-view-default) and takes the following form:
 
@@ -37,15 +42,16 @@ The [`raspberryturkd`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a317
 4. Write status to disk
 5. Repeat from step 1
 
-_Image of perception/action sequence_
-
 # Status
+---
 
 Every loop of the sequence a status of the current game is written to `/var/lib/raspberryturk/status.txt`. This includes information like the which color pieces appear to be on which squares (part of the [vision](/details/vision.html) algorithm), and the current state of the game saved to disk. There is a useful command to watch the file for changes, `$ raspberryturk status --watch`.
 
-_Animation of status updating when the board changes_
+<center>{% include image name="status.gif" width="100%" %}</center>
+{% include caption txt="Status updates automatically as pieces are moved." %}
 
 # Logging
+---
 
 The project uses logging for various tasks and has come in useful when debugging. In scripts, logging is printed to the console. In the daemon, it is handled by [`RotatingFileHandler`](https://docs.python.org/2.7/library/logging.handlers.html#logging.handlers.RotatingFileHandler).
 

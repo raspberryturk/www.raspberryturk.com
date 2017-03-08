@@ -1,15 +1,25 @@
 ---
-title: Raspberry Turk Camera Perspective Warp
+title: Camera Perspective Warp
 layout: page
+image: distort2.jpg
+next_url: /details/table.html
+next_topic: how the table is put together
 ---
 
 # Introduction
+---
 
 The Raspberry Turk uses a [Raspberry Pi camera module](https://www.raspberrypi.org/products/camera-module/) and [computer vision algorithms](/details/vision.html) to determine which pieces are in which squares. In order to see the board properly, it needs to be calibrated first.
 
-_Image of raw camera capture (A) converted to final product (B)_
+<center>
+{% include image name="capture.jpg" width="40%" %}
+{% include arrow %}
+{% include image name="chessboardframe.jpg" width="30%" %}
+</center>
+{% include caption txt="A) Raw image taken from camera. B) Final image after perspective transform." %}
 
 # Warp Perspective
+---
 
 From [`chess_camera.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/vision/chess_camera.py?at=master&fileviewer=file-view-default#chess_camera.py-13)
 ```python
@@ -26,6 +36,7 @@ def current_chessboard_frame(self):
 In order to go from A to B, [`cv2.warpPerspective`](http://docs.opencv.org/3.0-last-rst/modules/imgproc/doc/geometric_transformations.html#cv2.warpPerspective) from OpenCV is used.
 
 # Finding the Transformation Matrix
+---
 
 There is a small script used to find the correct transformation matrix. The full source can be found [here](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/vision/chessboard_perspective_transform.py?at=master&fileviewer=file-view-default).
 
