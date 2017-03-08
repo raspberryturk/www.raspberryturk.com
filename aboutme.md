@@ -1,6 +1,6 @@
 ---
 title: About Me
-layout: page
+layout: basic
 ---
 
 <center>{% include image name="joeymeyer-portrait.png" width="240pt" %}</center>
