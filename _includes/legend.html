@@ -1,0 +1,36 @@
+<div class="legend">
+	<div class="turk-hero">
+		<center><img src="/assets/img/turkhero.gif" /></center>
+	</div>
+	<div class="legend-nav">
+		<ul>
+			<a href="/details/vision.html"><li>Vision</li></a>
+			<ul>
+				<a href="/details/vision/camera_calibration.html"><li>Camera</li></a>
+				<a href="/details/vision/data_collection.html"><li>Data</li></a>
+				<a href="/notebooks/chess_piece_presence.html"><li>Piece Color<sup><code>NB</code></sup></li></a>
+				<a href="/notebooks/chess_piece_classification.html"><li>Piece Promotion<sup><code>NB</code></sup></li></a>
+			</ul>
+			<a href="/details/arm.html"><li>Arm</li></a>
+			<ul>
+				<a href="/details/arm/python-dynamixel.html"><li>Servos</li></a>
+				<a href="/details/arm/3dprint.html"><li>Dynamixel + Actobotics</li></a>
+				<a href="/details/arm/gripper.html"><li>Gripper</li></a>
+				<a href="/notebooks/arm_error_correction.html"><li>Arm Movement<sup><code>NB</code></sup></li></a>
+			</ul>
+			<a href="/details/daemon.html"><li>Daemon</li></a>
+			<a href="/details/ai.html"><li>AI</li></a>
+			<a href="/details/table.html"><li>Table</li></a>
+		</ul>
+	</div>
+</div>
+<script>
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+
+var legend = document.querySelector(".legend");
+if (isSafari) {
+	legend.style.backgroundColor = "#a8b0c3";
+} else {
+	legend.style.backgroundColor = "#979FB7";
+}
+</script>

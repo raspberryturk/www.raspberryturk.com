@@ -1,12 +1,29 @@
 ---
-layout: page
+title: Raspberry Turk
+layout: legend
 ---
 
-The Raspberry Turk is a robot that can play chess. It is completely open source and the methods for building it are documented on this website. The project is written almost entirely in Python, and runs on a Raspberry Pi.
+# Introduction
+---
 
-The project consists of several main components working together:
+The Raspberry Turk is a robot that can play chess. It is completely [open source]({{ site.raspberryturk_github_repo }}) and the methods for building it are documented on this website. The project is written almost entirely in Python, runs on a Raspberry Pi, and incorporates aspects of computer vision, data science, machine learning, robotics, 3D printing, and—of course—chess.
 
-1. The Raspberry Pi, running all of the code
-2. The robotic arm, for moving the pieces
-3. The camera and lighting fixture
-4. The table itself, which hold the board/pieces, the arm, and the pipe supporting the lights and camera.
+# Video
+---
+
+<center>
+	<video style="max-width: 100%; margin-top: 1em;" controls>
+	  <source src="/assets/video/raspberryturk.mp4" type="video/mp4">
+	</video>
+</center>
+
+# Background
+---
+
+The Raspberry Turk is inspired by the [Mechanical Turk](https://en.wikipedia.org/wiki/The_Turk), a chess-playing machine constructed in the late 18th century. I learned about this fascinating device years ago, and recently read [The Turk](http://a.co/8rJldc8) by Tom Standage. After having recently studied machine learning, I decided a chess playing robot could be a fun project to apply some learned material.
+
+The Mechanical Turk won most of its games, touring through Europe and America and playing famous people of the time, such as Benjamin Franklin and Napoleon Bonaparte. The device, which was claimed to be a purely mechanical creation, remained a mystery to spectators for most of it's lifetime. Famously, Edgar Allan Poe wrote an article speculating on how it could work.
+
+> Wherever seen it has been an object of intense curiosity, to all persons who think. Yet the question of its modus operandi is still undetermined. Nothing has been written on this topic which can be considered as decisive — and accordingly we find every where men of mechanical genius, of great general acuteness, and discriminative understanding, who make no scruple in pronouncing the Automaton a pure machine, unconnected with human agency in its movements, and consequently, beyond all comparison, the most astonishing of the inventions of mankind. And such it would undoubtedly be, were they right in their supposition.
+>
+> – [Edgan Allan Poe](http://www.eapoe.org/works/essays/maelzel.htm)
