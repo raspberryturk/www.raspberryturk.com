@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/css?family=Ubuntu|Open+Sans:500&subset=latin,latin-ext);
 
 body{
 	color: #2c3e50;
@@ -12,9 +12,13 @@ body{
 	color: #fff;
 }
 
+.sidebar li {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .sidebar-header {
 	text-align: center;
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .sidebar-header .title{
 	letter-spacing: 3px;
@@ -24,6 +28,18 @@ body{
 .sidebar-header .title a{
 	text-decoration: none;
 	color: #fff;
+}
+
+.page-image {
+  width: auto;
+  max-width: 80%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.page-image-caption {
+  max-width: 100%;
+  margin-bottom: 2em;
 }
 
 a.nav-link {
@@ -38,7 +54,7 @@ a.nav-link:hover { color: #777; }
 
 #bio {
 	font-family: "Courier New", Courier, monospace;
-	font-size: 11px;
+	font-size: 10pt;
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
@@ -81,15 +97,173 @@ article .share .gplus:hover {
 	padding-bottom: 10px;
 }
 
-.page-header {
-	color: #e74c3c;
-	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+.notebook-header {
+  padding: 18px 66px 18px 66px;
+  color: #2c3e50;
 }
 
-@media only screen and (min-width: 768px) {
-    .page-header{
-        margin-right: 70px;
-    }
+.notebook-header code {
+  color: #2c3e50;
+  background: rgba(44, 62, 80, 0.1);
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top: 1px solid #2c3e50;
+}
+
+.page-header {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+	color: #2c3e50;
+  border-bottom: none;
+}
+
+.page-header h1 {
+  position: absolute;
+  font-size: 36pt;
+  left: 56px;
+  bottom: 44px;
+  z-index: 999;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  margin-right: 56px;
+  border-radius: 8px;
+}
+
+.page-body {
+  margin: 66px;
+}
+
+.page-body h1 {
+  margin-top: 44pt;
+}
+
+.legend {
+  width: 100%;
+  background-color: #a8b0c3;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+.turk-hero img {
+  right: 2em;
+  max-width: 60%;
+  float: right;
+  transform: translate(120px);
+  -webkit-animation: moveleft 3s; /* Safari, Chrome and Opera > 12.1 */
+  -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation: moveleft 3s; /* Firefox < 16 */
+      -ms-animation: moveleft 3s; /* Internet Explorer */
+       -o-animation: moveleft 3s; /* Opera < 12.1 */
+          animation: moveleft 3s;
+          animation-delay: 1s;
+          animation-fill-mode: forwards;
+}
+
+@keyframes moveleft {
+  from { transform: translate(120px); }
+  to   { transform: translate(0px); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes moveleft {
+  from { transform: translate(120px); }
+  to   { transform: translate(0px); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes moveleft {
+  from { transform: translate(120px); }
+  to   { transform: translate(0px); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes moveleft {
+  from { transform: translate(120px); }
+  to   { transform: translate(0px); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes moveleft {
+  from { transform: translate(120px); }
+  to   { transform: translate(0px); }
+}
+
+.legend-nav {
+  width: 120%;
+  opacity: 0;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+          animation-delay: 2s;
+          animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.legend-nav ul {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+  line-height: 120%;
+  list-style-type: none;
+}
+
+.legend-nav a {
+  color: #2c3e50;
+}
+
+.legend-nav code {
+  font-size: 0.7em;
+  color: #2c3e50;
+  background: rgba(44, 62, 80, 0.1);
+}
+
+blockquote {
+  margin: 2em;
+}
+
+blockquote p {
+  font-size: 1em;
+  line-height: 200%;
+  text-align: justify;
 }
 
 article{
@@ -122,8 +296,8 @@ article.home h3,
 article.home h4,
 article.home h5,
 article.home h6 {
-	font-family: 'Ubuntu', sans-serif;
-	color: #f2756a;
+  font-family: 'Ubuntu', sans-serif;
+  color: #f2756a;
 }
 
 article.home h1 a,
@@ -189,3 +363,84 @@ ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
 
+#sidebar-nav {
+    list-style-type: none;
+    margin-top: 3em;
+    padding: 0;
+    width: 100%;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    text-align: center;
+    font-size: 16pt;
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration:none;
+  cursor:pointer;
+}
+
+#page-content {
+  padding: 0pt;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16pt;
+  line-height: 200%;
+}
+
+.notebooks-list {
+  list-style-type: none;
+}
+
+.notebooks-list {
+  padding-left: 0;
+}
+
+.notebooks-list code {
+  background: rgba(44, 62, 80, 0.1);
+}
+.notebooks-list a {
+  color: #2c3e50;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    margin-bottom: 0;
+  }
+  .notebook-header {
+    padding: 1em;
+  }
+  .page-body {
+    margin: 1em;
+  }
+  .page-body h1 {
+    margin-top: 10px;
+  }
+  img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: auto;
+    max-width: 100%;
+  }
+  div {
+    overflow: scroll;
+    max-width: 100%;
+  }
+  .page-header h1 {
+    left: 8px;
+    bottom: 8px;
+    margin-right: 8px;
+    font-size: 1em;
+  }
+  .page-image {
+    max-width: 100% !important;
+  }
+  .page-arrow {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: block;
+    max-width: 20% !important;
+  }
+}
