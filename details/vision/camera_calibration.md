@@ -21,7 +21,7 @@ The Raspberry Turk uses a [Raspberry Pi camera module](https://www.raspberrypi.o
 # Warp Perspective
 ---
 
-From [`chess_camera.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/vision/chess_camera.py?at=master&fileviewer=file-view-default#chess_camera.py-13)
+From [`chess_camera.py`](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/vision/chess_camera.py#L13)
 ```python
 def current_chessboard_frame(self):
     _, frame = self._capture.read()
@@ -38,7 +38,7 @@ In order to go from A to B, [`cv2.warpPerspective`](http://docs.opencv.org/3.0-l
 # Finding the Transformation Matrix
 ---
 
-There is a small script used to find the correct transformation matrix. The full source can be found [here](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/vision/chessboard_perspective_transform.py?at=master&fileviewer=file-view-default).
+There is a small script used to find the correct transformation matrix. The full source can be found [here](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/vision/chessboard_perspective_transform.py).
 
 Essentially it does the following:
 

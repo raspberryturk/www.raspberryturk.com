@@ -20,7 +20,7 @@ The electromagnet is attached to the bottom on the rod and can be controlled via
 
 <center>{% include image name="electromagnetcircuit.png" %}</center>
 
-The code controlling the electromagnet can be found in the [gripper.py](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/motion/gripper.py?at=master&fileviewer=file-view-default) file in the project. The relevant parts of the file are below.
+The code controlling the electromagnet can be found in the [gripper.py](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/motion/gripper.py) file in the project. The relevant parts of the file are below.
 
 ```python
 import RPi.GPIO as GPIO
@@ -41,7 +41,7 @@ electromagnet(False) # Off
 # Servo
 ---
 
-The vertical motion, to pick up and drop off pieces, is accomplished with a [gear rack kit](https://www.servocity.com/785-gear-rack-kit-637169) made out of Actobotics from ServoCity. The [Hitec HS-785HB Servo](https://www.servocity.com/hs-785hb-servo) is controlled by the Raspberry Pi via adjusting the PWM signal of a GPIO pin. This rotation moves the aluminum beam that the electromagnet is attached to. Relevant code for controlling the gripper servo in Python is found in [gripper.py](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/motion/gripper.py?at=master&fileviewer=file-view-default).
+The vertical motion, to pick up and drop off pieces, is accomplished with a [gear rack kit](https://www.servocity.com/785-gear-rack-kit-637169) made out of Actobotics from ServoCity. The [Hitec HS-785HB Servo](https://www.servocity.com/hs-785hb-servo) is controlled by the Raspberry Pi via adjusting the PWM signal of a GPIO pin. This rotation moves the aluminum beam that the electromagnet is attached to. Relevant code for controlling the gripper servo in Python is found in [gripper.py](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/motion/gripper.py).
 
 <center>{% include image name="servocircuit.png" %}</center>
 

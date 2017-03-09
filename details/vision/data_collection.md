@@ -37,7 +37,7 @@ Collection occured over several hours as I sat moving pieces very slightly. I to
 
 ---
 
-The [`collection.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/data/collection.py?at=master&fileviewer=file-view-default) script provides a simple GUI for capturing chessboard frames and associated [board FENs](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation).
+The [`collection.py`](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/data/collection.py) script provides a simple GUI for capturing chessboard frames and associated [board FENs](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation).
 ```bash
 $ python -m raspberryturk.embedded.data.collection --help
 usage: raspberryturk/embedded/data/collection.py [-h] [-s SEED] base_path
@@ -60,7 +60,7 @@ optional arguments:
 # Raw Data
 ---
 
-The [`collection.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/data/collection.py?at=master&fileviewer=file-view-default) script produces a series of folders which each contain 480x480px images and a `board.fen` file.
+The [`collection.py`](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/data/collection.py) script produces a series of folders which each contain 480x480px images and a `board.fen` file.
 
 <center>{% include image name="rawdatafile.png" %}</center>
 {% include caption txt="Folder structure of raw collected data." %}
@@ -71,7 +71,7 @@ The [`collection.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178
 # Interim
 ---
 
-The [`process_raw.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/core/data/process_raw.py?at=master&fileviewer=file-view-default) script will take the full set of images and board FENs collected with collection.py and slice them up into labeled folders of individual 60x60px images. The script keeps track of which board images have been processed, so the next time the script is run it will only process newly captured images.
+The [`process_raw.py`](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/core/data/process_raw.py) script will take the full set of images and board FENs collected with collection.py and slice them up into labeled folders of individual 60x60px images. The script keeps track of which board images have been processed, so the next time the script is run it will only process newly captured images.
 
 ```
 $ python -m raspberryturk.core.data.process_raw --help
@@ -108,7 +108,7 @@ optional arguments:
 # Processed
 ---
 
-The final step is to produce a complete encapsulated dataset that can be imported using [`np.load`](https://docs.scipy.org/doc/numpy-1.12.0/reference/generated/numpy.load.html). Each dataset contains `X_train`, `X_val`, `y_train`, `y_val`, and `zca` (if the dataset is [ZCA whitened](http://ufldl.stanford.edu/wiki/index.php/Whitening#ZCA_Whitening)) and can be customized in a number of ways as described below.
+The final step is to produce a complete encapsulated dataset that can be imported using [`np.load`](https://docs.scipy.org/doc/numpy-1.12.0/reference/generated/numpy.load.html). Each dataset contains `X_train`, `X_val`, `y_train`, `y_val`, and `zca` (if the dataset is [ZCA whitened](http://ufldl.stanford.edu/wiki/index.php/Whitening#ZCA_Whitening)) and can be customized in a number of ways as described below. Datasets are created using the [`create_dataset.py`](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/core/data/create_dataset.py) utility.
 
 ```
 $ python -m raspberryturk.core.data.create_dataset --help

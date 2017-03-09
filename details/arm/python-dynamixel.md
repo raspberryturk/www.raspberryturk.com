@@ -61,7 +61,7 @@ The servo connects to the Arbotix-M microcontroller via a 3 pin cable. There are
 
 Connect the Raspberry Pi to the Arbotix-M via the FTDI USB to serial cable. Find out the serial port of the Arbotix-M using `lsdev` or `ls /dev/{tty,cu}.*`. On the Raspberry Turk, the port is `/dev/ttyUSB0`.
 
-The PyPose project provides a driver which effectively allows you to get and set registers on any connected Dynamixel device. This file was minorly adapted and added to the Raspberry Turk codebase, it can be found [here](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/motion/pypose/driver.py?at=master&fileviewer=file-view-default). Keep in mind this driver has [pySerial](https://pythonhosted.org/pyserial/) as a dependency.
+The PyPose project provides a driver which effectively allows you to get and set registers on any connected Dynamixel device. This file was minorly adapted and added to the Raspberry Turk codebase, it can be found [here](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/motion/pypose/driver.py). Keep in mind this driver has [pySerial](https://pythonhosted.org/pyserial/) as a dependency.
 
 From this point, you can pass in the port and create a `Driver` object to control the servos.
 
@@ -81,4 +81,4 @@ speed = 888 # A number between 0 and 1023
 self.driver.setReg(1, P_GOAL_SPEED_L, [speed%256, speed>>8])
 ```
 
-A complete list of registers and documentation on how/when to use them can be found [here](http://support.robotis.com/en/product/actuator/dynamixel/ax_series/dxl_ax_actuator.htm). The associated file with all of the register contants is also from the PyPose project, and can be found [here](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/motion/pypose/ax12.py?at=master&fileviewer=file-view-default).
+A complete list of registers and documentation on how/when to use them can be found [here](http://support.robotis.com/en/product/actuator/dynamixel/ax_series/dxl_ax_actuator.htm). The associated file with all of the register contants is also from the PyPose project, and can be found [here](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/motion/pypose/ax12.py).

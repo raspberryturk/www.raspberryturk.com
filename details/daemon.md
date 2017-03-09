@@ -9,7 +9,7 @@ next_topic: how the AI behind the Raspberry Turk works
 # Introduction
 ---
 
-The Raspberry Turk runs on the Raspberry Pi in a daemon process called [`raspberryturkd`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/raspberryturkd.py?at=master&fileviewer=file-view-default). It is based on [`python-daemon`](https://pypi.python.org/pypi/python-daemon), which handles setting up stdin/stdout/stderr, easy signal handling, running a single process using a PID lock file, detaching the process to run in the background, and various other helpful features. The deamon process is controlled through a helpful script located in the [`__main__.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/__main__.py?at=master&fileviewer=file-view-default) file of the project. This script is installed via [`setup.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/setup.py?at=master&fileviewer=file-view-default) as a console script entry point.
+The Raspberry Turk runs on the Raspberry Pi in a daemon process called [`raspberryturkd`](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/raspberryturkd.py). It is based on [`python-daemon`](https://pypi.python.org/pypi/python-daemon), which handles setting up stdin/stdout/stderr, easy signal handling, running a single process using a PID lock file, detaching the process to run in the background, and various other helpful features. The deamon process is controlled through a helpful script located in the [`__main__.py`](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/__main__.py) file of the project. This script is installed via [`setup.py`](https://github.com/joeymeyer/raspberryturk/blob/master/setup.py) as a console script entry point.
 
 ```
 $ raspberryturk --help
@@ -28,7 +28,7 @@ optional arguments:
 # Agent
 ---
 
-The [`raspberryturkd`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/raspberryturkd.py?at=master&fileviewer=file-view-default) is responsible for running a perception/action sequence in a loop until it encounters an interrupt signal. The perception/action sequence exists in [`agent.py`](https://bitbucket.org/joeymeyer/raspberryturk/src/719a3178aa94490fd08c851b1373a6674c14db82/raspberryturk/embedded/agent.py?at=master&fileviewer=file-view-default) and takes the following form:
+The [`raspberryturkd`](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/raspberryturkd.py) is responsible for running a perception/action sequence in a loop until it encounters an interrupt signal. The perception/action sequence exists in [`agent.py`](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/agent.py) and takes the following form:
 
 1. Get the last know game state from [PGN](https://en.wikipedia.org/wiki/Portable_Game_Notation) saved on disk 
 2. If it's my turn
