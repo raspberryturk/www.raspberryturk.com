@@ -1,7 +1,7 @@
 ---
 title: Camera Perspective Warp
 layout: page
-image: distort2.jpg
+image: distort.jpg
 next_url: /details/table.html
 next_topic: how the table is put together
 ---
