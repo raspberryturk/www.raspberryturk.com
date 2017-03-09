@@ -218,5 +218,3 @@ In [12]: print(d.zca.shape)
 (3600, 3600)
 
 ```
-
-_Table/image showing the contents of a dataset_
