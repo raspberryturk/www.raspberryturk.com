@@ -22,3 +22,4 @@ exclude:
   - README.md
   - .ruby-version
   - CNAME
+  - LICENSE
