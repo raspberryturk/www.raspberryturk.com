@@ -32,7 +32,7 @@ Using [Tinkercad](https://www.tinkercad.com/), an easy browser-based 3D design a
 <center>{% include image name="3dservo.gif" %}</center>
 {% include caption txt="Visualization of the adapter alone and on the servo." %}
 
-The design is publicly available [here](https://tinkercad.com/things/hqfiNy3yeVC), and can be adapted for your own purposes. I first printed several copies using ABS material at a local makers workshop. This was great for prototyping and gave me a final design. The ABS material fit well but cracked easily under the stress caused by torsion when moving the entire arm. I took the final design and uploaded it to [Shapeways](https://www.shapeways.com) and printed it in stainless steel. You can order it [here](https://www.shapeways.com/product/MWLKVSM23/dynamixel-adapter?optionId=61806374&li=shop-inventory), or modify/print it however you like using the [.STL](/downloads/dynamixel_adapter.stl).
+The design is publicly available [here](https://tinkercad.com/things/hqfiNy3yeVC), and can be adapted for your own purposes. I first printed several copies using ABS material at a local makers workshop. This was great for prototyping and gave me a final design. The ABS material fit well but cracked easily under the stress caused by torsion when moving the entire arm. I took the final design and uploaded it to [Shapeways](https://www.shapeways.com) and printed it in stainless steel. You can order it [here](https://www.shapeways.com/product/MWLKVSM23/dynamixel-adapter?optionId=61806374&li=shop-inventory), or modify/print it however you like using the [.STL](/download/dynamixel_adapter.stl).
 
 # Attaching AX-12A to Actobotics Aluminum Channel
 ---
