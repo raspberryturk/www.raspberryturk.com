@@ -60,11 +60,11 @@ This dataset is publicly [available](https://www.kaggle.com/joeymeyer/datasets) 
 Instead of trying to figure out what type of piece is on each square, we can take a shortcut. Because we know the state of the game, all we need to do is track which piece moved. By only tracking changes we can internally keep track of which pieces are on which squares.
 
 <center>
-{% include image name="chessboard1.png" width="20%" %}
+{% include image name="chessboard1.svg" width="20%" %}
 {% include arrow %}
 {% include image name="colorboardmaskfade.gif" width="20%" %}
 {% include arrow %}
-{% include image name="chessboard2.png" width="20%" %}
+{% include image name="chessboard2.svg" width="20%" %}
 </center>
 {% include caption txt="By observing which color pieces are in which squares, the robot can determine which move was made." %}
 
