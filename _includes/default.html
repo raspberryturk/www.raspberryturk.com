@@ -25,13 +25,12 @@
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
 
-	<!-- Le fav and touch icons -->
-	<!-- Update these with your own images
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	-->
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.BASE_PATH }}/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="{{ site.BASE_PATH }}/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="{{ site.BASE_PATH }}/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="{{ site.BASE_PATH }}/manifest.json">
+	<link rel="mask-icon" href="{{ site.BASE_PATH }}/safari-pinned-tab.svg" color="#2c3e50">
+	<meta name="theme-color" content="#2c3e50">
 </head>
 
 <body>
@@ -39,7 +38,7 @@
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="//www.gravatar.com/avatar/{{site.email_md5}}?s=35" class="img-circle" />
+				<img src="{{ site.BASE_PATH }}/assets/img/logo.svg" style="width: 32px !important;" />
 				{{ site.title }}
 			</a>
 		</div>
