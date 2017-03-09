@@ -11,7 +11,7 @@ next_topic: the program that runs the Raspberry Turk
 
 The Raspberry Turk is built into a small 3 ft by 3 ft table. It has a box which is fastened to one side and houses all of the electronics. The [arm](/details/arm.html) is attached to the top of the box. There is a tall vertical pipe fastened to the box that supports a fixture with the camera and lighting directly above the board. The pipe is [black steel plumbing pipe](http://www.homedepot.com/b/Plumbing-Pipes-Fittings-Black-Pipe-Fittings/N-5yc1vZbqn5) from Home Depot.
 
-<center>{% include image name="wholetable2.jpg" %}</center>
+<center>{% include image name="wholetable.jpg" %}</center>
 
 <center>{% include image name="insidebox.jpg" %}</center>
 {% include caption txt="Inside the box, what a mess..." %}
