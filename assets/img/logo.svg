@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1920 1920" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(3.32375,0,0,3.32375,-9201.95,-4789.24)">
+        <path d="M3346.2,1475.34C3346.2,1456.34 3330.77,1440.91 3311.77,1440.91L2802.97,1440.91C2783.97,1440.91 2768.54,1456.34 2768.54,1475.34L2768.54,1984.14C2768.54,2003.14 2783.97,2018.57 2802.97,2018.57L3311.77,2018.57C3330.77,2018.57 3346.2,2003.14 3346.2,1984.14L3346.2,1475.34Z" style="fill:rgb(228,185,116);"/>
+    </g>
+    <g transform="matrix(9.81097,0,0,11.1447,-31052.8,-12913.9)">
+        <rect x="3191.36" y="1181.86" width="143.196" height="126.059" style="fill:url(#_Linear1);"/>
+    </g>
+    <g transform="matrix(2.21729,0,0,2.51872,-6116.17,-2334.28)">
+        <rect x="3191.36" y="1181.86" width="143.196" height="126.059"/>
+    </g>
+    <g transform="matrix(2.21729,0,0,2.51872,-6433.67,-2016.77)">
+        <rect x="3191.36" y="1181.86" width="143.196" height="126.059"/>
+    </g>
+    <g transform="matrix(2.21729,0,0,2.51872,-6116.17,-1699.27)">
+        <rect x="3191.36" y="1181.86" width="143.196" height="126.059"/>
+    </g>
+    <g transform="matrix(2.21729,0,0,2.51872,-5798.66,-2016.77)">
+        <rect x="3191.36" y="1181.86" width="143.196" height="126.059"/>
+    </g>
+    <g transform="matrix(2.21729,0,0,2.51872,-5798.66,-2651.79)">
+        <rect x="3191.36" y="1181.86" width="143.196" height="126.059"/>
+    </g>
+    <g transform="matrix(2.21729,0,0,2.51872,-6433.67,-2651.79)">
+        <rect x="3191.36" y="1181.86" width="143.196" height="126.059"/>
+    </g>
+    <g transform="matrix(2.21729,0,0,2.51872,-6751.18,-2334.28)">
+        <rect x="3191.36" y="1181.86" width="143.196" height="126.059"/>
+    </g>
+    <g transform="matrix(2.21729,0,0,2.51872,-6751.18,-1699.27)">
+        <rect x="3191.36" y="1181.86" width="143.196" height="126.059"/>
+    </g>
+    <g transform="matrix(4.31637,0,0,4.16846,-15886.2,-6761.15)">
+        <ellipse cx="3792.53" cy="1738.03" rx="22.704" ry="23.51" style="fill:rgb(253,115,55);"/>
+    </g>
+    <g transform="matrix(4.31637,0,0,4.16846,-14933.7,-5808.62)">
+        <ellipse cx="3792.53" cy="1738.03" rx="22.704" ry="23.51" style="fill:rgb(253,115,55);"/>
+    </g>
+    <g transform="matrix(4.31637,0,0,4.16846,-15251.2,-6126.13)">
+        <ellipse cx="3792.53" cy="1738.03" rx="22.704" ry="23.51" style="fill:rgb(253,115,55);"/>
+    </g>
+    <g transform="matrix(4.31637,0,0,4.16846,-15568.7,-6126.13)">
+        <ellipse cx="3792.53" cy="1738.03" rx="22.704" ry="23.51" style="fill:rgb(107,203,73);"/>
+    </g>
+    <g transform="matrix(4.31637,0,0,4.16846,-15251.2,-6443.64)">
+        <ellipse cx="3792.53" cy="1738.03" rx="22.704" ry="23.51" style="fill:rgb(107,203,73);"/>
+    </g>
+    <g transform="matrix(4.31637,0,0,4.16846,-14933.7,-6443.64)">
+        <ellipse cx="3792.53" cy="1738.03" rx="22.704" ry="23.51" style="fill:rgb(107,203,73);"/>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(143.196,0,0,126.059,3191.36,1244.89)"><stop offset="0%" style="stop-color:white;stop-opacity:1"/><stop offset="100%" style="stop-color:white;stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>
