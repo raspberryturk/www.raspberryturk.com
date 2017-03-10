@@ -2,6 +2,7 @@
 title: Daemon
 layout: page
 image: raspberrypi.jpg
+image_alt: Abstract image of the Raspberry Pi.
 next_url: /details/ai.html
 next_topic: how the AI behind the Raspberry Turk works
 ---
@@ -47,7 +48,7 @@ The [`raspberryturkd`](https://github.com/joeymeyer/raspberryturk/blob/master/ra
 
 Every loop of the sequence a status of the current game is written to `/var/lib/raspberryturk/status.txt`. This includes information like the which color pieces appear to be on which squares (part of the [vision](/details/vision.html) algorithm), and the current state of the game saved to disk. There is a useful command to watch the file for changes, `$ raspberryturk status --watch`.
 
-<center>{% include image name="status.gif" width="100%" %}</center>
+<center>{% include image name="status.gif" width="100%" alt="Animation of moving a piece and status.txt updating automatically." %}</center>
 {% include caption txt="Status updates automatically as pieces are moved." %}
 
 # Logging

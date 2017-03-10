@@ -2,6 +2,7 @@
 title: Controlling an AX-12 Dynamixel Servo with Python on a Raspberry Pi
 layout: page
 image: arbotixmwide.jpg
+image_alt: Abstract image of Arbotic-M Robocontroller.
 next_url: /details/arm/3dprint.html
 next_topic: using Actobotics and Dyanmixels together
 ---
@@ -29,11 +30,11 @@ The first step is to setup the Arbotix-M Robocontroller. The Arduino compatible 
 The PyPose project is capable of a whole lot more than just passing messages through the Arobotix-M, it provides an entire framework for capturing poses and saving them, plus a whole lot more. However, because of the dynamic and simple nature of the SCARA arm on the Raspberry Turk, this was not needed. Once the pypose sketch is installed on the microcontroller it will act as a pass through so the Raspberry Pi can communicate directly with the servo(s).
 
 <center>
-	{% include image name="raspberrypifull.jpg" width="20%" %}
+	{% include image name="raspberrypifull.jpg" alt="Close up of Raspberry Pi." width="20%" %}
 	{% include arrow %}
-	{% include image name="arbotixm.jpg" width="20%" %}
+	{% include image name="arbotixm.jpg" alt="Close up of the Arbotix-M robocontroller." width="20%" %}
 	{% include arrow %}
-	{% include image name="ax12mid.jpg" width="20%" %}
+	{% include image name="ax12mid.jpg" alt="AX-12A Dynamixel Servo attached to the arm." width="20%" %}
 </center>
 {% include caption txt="The Raspberry Pi is connected to the Arbotix-M, which is connected to the AX-12A." %}
 
@@ -53,7 +54,7 @@ The ability to get and set the speed and position among other things is one of t
 
 The servo connects to the Arbotix-M microcontroller via a 3 pin cable. There are several ports for multiple servos on the microcontroller, but you can also daisy chain them because each servo has two 3 pin connectors on the back. Each Dynamixel added to the chain will require it's own ID which can be set before adding it to the chain. Instructions on how to set the ID using the DynaManager software can be found [here](http://learn.trossenrobotics.com/arbotix/1-using-the-tr-dynamixel-servo-tool#&panel1-1). Alternatively it is possible to set the ID directly with setting the ID register using Python as described below.
 
-<center>{% include image name="ax12chain.png" %}</center>
+<center>{% include image name="ax12chain.png" alt="Diagram of chain of Dynamixel servos." %}</center>
 {% include caption txt="Dynamixels chained together." %}
 
 # Raspberry Pi

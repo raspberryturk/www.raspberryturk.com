@@ -2,6 +2,7 @@
 title: Data Collection
 layout: page
 image: pawnmosaic.jpg
+image_alt: Abstract mosiac of chess pieces made out of images from the dataset.
 next_url: /details/vision/camera_calibration.html
 next_topic: how the Raspberry Turk converts it's camera input into a usable form
 ---
@@ -11,7 +12,7 @@ next_topic: how the Raspberry Turk converts it's camera input into a usable form
 
 The [vision](/details/vision.html) aspect of the Raspberry Turk is based on a large dataset which consists of overhead images and the associated board state for each image. This dataset is publicly [available](https://www.kaggle.com/joeymeyer/datasets) on Kaggle, released under the [(CC BY-SA 4.0) license](https://creativecommons.org/licenses/by-sa/4.0/).
 
-<center>{% include image name="collection.gif" %}</center>
+<center>{% include image name="collection.gif" alt="Timelapse of dataset collection." %}</center>
 {% include caption txt="Collection of a previous dataset over several hours." %}
 
 # Collection
@@ -54,7 +55,7 @@ optional arguments:
   -s SEED, --seed SEED  Random seed to initialize board.
 ```
 
-<center>{% include image name="collectionscreen.jpg" %}</center>
+<center>{% include image name="collectionscreen.jpg" alt="Window with collection.py GUI." %}</center>
 {% include caption txt="Capturing a chessboard image via <code>collection.py</code> window." %}
 
 # Raw Data
@@ -62,9 +63,9 @@ optional arguments:
 
 The [`collection.py`](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/data/collection.py) script produces a series of folders which each contain 480x480px images and a `board.fen` file.
 
-<center>{% include image name="rawdatafile.png" %}</center>
+<center>{% include image name="rawdatafile.png" alt="Finder window showing raw data contents in filesystem." %}</center>
 {% include caption txt="Folder structure of raw collected data." %}
-<center>{% include image name="rawcapture.png" %}</center>
+<center>{% include image name="rawcapture.png" alt="Example image stored as raw data." %}</center>
 {% include caption txt="<code>1481337643.jpg</code>" %}
 <center><code>board.fen:</code><pre><a href="https://en.lichess.org/editor/p1pqnRrP/2bB1N2/2NP1pRp/1PP2nrQ/2B2P1p/1K3p2/1QqkPp2/PpbP4">p1pqnRrP/2bB1N2/2NP1pRp/1PP2nrQ/2B2P1p/1K3p2/1QqkPp2/PpbP4</a></pre></center>
 
@@ -94,14 +95,14 @@ optional arguments:
                       target_path and reprocess everything.
 ```
 
-<center>{% include image name="interimdatafile.png" %}</center>
+<center>{% include image name="interimdatafile.png" alt="Finder window showing interim data contents in filesystem." %}</center>
 {% include caption txt="Folder structure of interim data." %}
 <center>
-	{% include image name="rawcapture.png" width="20%" %}
+	{% include image name="rawcapture.png" alt="The raw data image." width="20%" %}
 	{% include arrow %}
-	{% include image name="rawcapturesliced.png" width="27%" %}
+	{% include image name="rawcapturesliced.png" alt="The raw data image sliced into 64 individual squares." width="27%" %}
 	{% include arrow %}
-	{% include image name="knightf7.jpg" width="13%" %}
+	{% include image name="knightf7.jpg" alt="A square containing an orange knight." width="13%" %}
 </center>
 {% include caption txt="Process from raw capture data to individual labeled squares (orange, knight, f7, etc)." %}
 

@@ -2,6 +2,7 @@
 title: Camera Perspective Warp
 layout: page
 image: distort.jpg
+image_alt: Abstract image of distorted chessboard.
 next_url: /details/table.html
 next_topic: how the table is put together
 ---
@@ -12,9 +13,9 @@ next_topic: how the table is put together
 The Raspberry Turk uses a [Raspberry Pi camera module](https://www.raspberrypi.org/products/camera-module/) and [computer vision algorithms](/details/vision.html) to determine which pieces are in which squares. In order to see the board properly, it needs to be calibrated first.
 
 <center>
-{% include image name="capture.jpg" width="40%" %}
+{% include image name="capture.jpg" alt="A raw image of the chessboard on table, captured from the camera." width="40%" %}
 {% include arrow %}
-{% include image name="chessboardframe.jpg" width="30%" %}
+{% include image name="chessboardframe.jpg" alt="Chessboard after warping the perspective of the raw image captured by the camera." width="30%" %}
 </center>
 {% include caption txt="A) Raw image taken from camera. B) Final image after perspective transform." %}
 

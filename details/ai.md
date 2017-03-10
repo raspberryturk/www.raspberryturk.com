@@ -2,6 +2,7 @@
 title: Chess Engine
 layout: page
 image: stockfishlog.jpg
+image_alt: Abstract image of stockfish logs.
 next_url: /details/arm.html
 next_topic: how the arm works
 ---
