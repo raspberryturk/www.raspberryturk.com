@@ -97,6 +97,35 @@ article .share .gplus:hover {
 	padding-bottom: 10px;
 }
 
+.navbar-brand {
+  background-color: #2c3e50;
+  width: 100%;
+  height: 96px;
+  padding: 0px;
+}
+
+.navbar-brand img {
+  margin: 9px;
+}
+
+.navbar-brand h1 {
+  display: inline;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.navbar-brand-subnav {
+  color: white;
+}
+
+.navbar-brand-subnav { padding:0; margin:0; width:100%; float:left; position: absolute; bottom: 0;}
+.navbar-brand-subnav ul { padding:0; margin:0; list-style:none; border:0; float:left; width: 100%;}
+.navbar-brand-subnav ul li { float:left; margin-left: 5.16%; margin-right: 5.16%; margin-bottom: 9px; padding:0; border:0; width: 23%; text-align: center;text-transform: uppercase;b}
+.navbar-brand-subnav ul li a { float:left; margin:0; padding:0; text-decoration:none; font-size: 1em; color: white;}
+
 .notebook-header {
   padding: 18px 66px 18px 66px;
   color: #2c3e50;
@@ -146,19 +175,26 @@ hr {
   width: 100%;
   background-color: #a8b0c3;
   margin: 0;
-  display: flex;
-  align-items: center;
   padding-bottom: 2em;
 }
 
 .turk-hero img {
-  right: 2em;
-  max-width: 60%;
-  float: right;
+  margin-left: 25%;
+  width: 322px;
+  height: 572px;
 }
 
 .legend-nav {
-  width: 120%;
+  margin-top: 60px;
+}
+
+.legend-nav:before {
+  content: '';
+  height: 100%;
+}
+.legend-nav:before, ul {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .legend-nav h1 {
@@ -174,6 +210,24 @@ hr {
   font-size: 1em;
   line-height: 120%;
   list-style-type: none;
+}
+
+.container {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .turk-hero img {
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .turk-hero img {
+    margin-top: 80px;
+    width: 270px;
+    height: 480px;
+  }
 }
 
 .legend-nav a {
@@ -337,6 +391,16 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .turk-hero img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .legend-nav {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
   .navbar {
     margin-bottom: 0;
   }
@@ -348,6 +412,12 @@ a:hover {
   }
   .page-body h1 {
     margin-top: 10px;
+  }
+  blockquote {
+    margin: 0em;
+  }
+  blockquote p {
+    text-align: left;
   }
   img {
     margin-top: 1em;

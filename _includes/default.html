@@ -38,9 +38,16 @@
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="{{ site.BASE_PATH }}/assets/img/logo.svg" style="width: 32px !important;" />
-				{{ site.title }}
+				<img src="{{ site.BASE_PATH }}/assets/img/logo.svg" style="width: 48px !important;" />
+				<h1>{{ site.title }}</h1>
 			</a>
+			<div class="navbar-brand-subnav">
+				<ul>
+					<li><a href="{{ site.BASE_PATH }}/">Home</a></li>
+					<li><a href="https://github.com/joeymeyer/raspberryturk">Github</a></li>
+					<li><a href="{{ site.BASE_PATH }}/aboutme.html">About Me</a></li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
