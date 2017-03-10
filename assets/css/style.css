@@ -438,6 +438,10 @@ a:hover {
   .page-image {
     max-width: 100% !important;
   }
+  .page-header img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .page-arrow {
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
