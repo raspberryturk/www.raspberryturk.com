@@ -121,7 +121,7 @@ hr {
   border-bottom: none;
 }
 
-.page-header h1 {
+.page-header-title h1 {
   position: absolute;
   font-size: 36pt;
   left: 56px;
@@ -161,6 +161,14 @@ hr {
   width: 120%;
 }
 
+.legend-nav h1 {
+  font-size: 1em;
+}
+
+.legend-nav hr {
+  margin-bottom: 1em;
+}
+
 .legend-nav ul {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1em;
@@ -170,6 +178,10 @@ hr {
 
 .legend-nav a {
   color: #2c3e50;
+}
+
+.legend-nav a:hover {
+  color: #000000;
 }
 
 .legend-nav code {
