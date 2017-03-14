@@ -53,7 +53,7 @@ Each image is then cut into 64 smaller images and stored with the appropriate la
 </center>
 {% include caption txt="Process from raw captured chessboard data to individual labeled squares (orange, knight, f7, etc)." %}
 
-This dataset is publicly [available](https://www.kaggle.com/joeymeyer/datasets) on Kaggle, released under the [(CC BY-SA 4.0) license](https://creativecommons.org/licenses/by-sa/4.0/).
+This dataset is publicly [available](https://www.kaggle.com/joeymeyer/raspberryturk) on Kaggle, released under the [(CC BY-SA 4.0) license](https://creativecommons.org/licenses/by-sa/4.0/).
 
 # Vision Model
 ---

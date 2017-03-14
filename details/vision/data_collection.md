@@ -10,7 +10,7 @@ next_topic: how the Raspberry Turk converts it's camera input into a usable form
 # Introduction
 ---
 
-The [vision](/details/vision.html) aspect of the Raspberry Turk is based on a large dataset which consists of overhead images and the associated board state for each image. This dataset is publicly [available](https://www.kaggle.com/joeymeyer/datasets) on Kaggle, released under the [(CC BY-SA 4.0) license](https://creativecommons.org/licenses/by-sa/4.0/).
+The [vision](/details/vision.html) aspect of the Raspberry Turk is based on a large dataset which consists of overhead images and the associated board state for each image. This dataset is publicly [available](https://www.kaggle.com/joeymeyer/raspberryturk) on Kaggle, released under the [(CC BY-SA 4.0) license](https://creativecommons.org/licenses/by-sa/4.0/).
 
 <center>{% include image name="collection.gif" alt="Timelapse of dataset collection." %}</center>
 {% include caption txt="Collection of a previous dataset over several hours." %}
