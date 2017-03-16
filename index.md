@@ -14,7 +14,7 @@ The Raspberry Turk is a robot that can play chess. It is completely [open source
 
 <center>
 	<video style="max-width: 100%; margin-top: 1em;" controls>
-	  <source src="/assets/video/raspberryturk.mp4" type="video/mp4">
+	  <source src="https://www.dropbox.com/s/gsr9dc1or6axygy/raspberryturk.mp4?dl=1" type="video/mp4">
 	</video>
 </center>
 
