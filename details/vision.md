@@ -69,7 +69,7 @@ Instead of trying to figure out what type of piece is on each square, we can tak
 </center>
 {% include caption txt="By observing which color pieces are in which squares, the robot can determine which move was made." %}
 
-Our goal is to create an algorithm that can determine whether a square contains no piece, an orange piece, or a green piece. I attempted to solve this problem using both machine learning and conventional computer vision. In the end I found using support vector machines to be an adequate way of solving the problem. The detailed notebook, with code, used to create this model is [here](/notebooks/chess_piece_presence.html).
+Our goal is to create an algorithm that can determine whether a square contains no piece, an orange piece, or a green piece. I attempted to solve this problem using both machine learning and conventional computer vision. In the end, I found using support vector machines to be an adequate way of solving the problem. The detailed notebook, with code, used to create this model is [here](/notebooks/chess_piece_presence.html).
 
 There is a problem with this approach though. What happens in this case?
 
@@ -80,4 +80,4 @@ There is a problem with this approach though. What happens in this case?
 </center>
 {% include caption txt="A famous endgame situation: <a href=\"https://en.wikipedia.org/wiki/Saavedra_position\">The Saavedra position</a>." %}
 
-We could assume that the player will always promote their pawn to a queen, but this is [not always what is best](http://www.chessgames.com/perl/chesscollection?cid=1000028). Instead we can attempt to determine the type of piece using a more complex model. In [this notebook](/notebooks/chess_piece_classification.html) I attempt to use convolutional neural networks and TensorFlow to detemine what type of piece the player promoted their pawn to.
+We could assume that the player will always promote their pawn to a queen, but this is [not always what is best](http://www.chessgames.com/perl/chesscollection?cid=1000028). Instead, we can attempt to determine the type of piece using a more complex model. In [this notebook](/notebooks/chess_piece_classification.html), I attempt to use convolutional neural networks and TensorFlow to detemine what type of piece the player promoted their pawn to.
