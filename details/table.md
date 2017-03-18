@@ -20,7 +20,7 @@ The Raspberry Turk is built into a small 3 ft by 3 ft table. It has a box which 
 # Camera
 ---
 
-The camera is attached by a HDMI cable running through the pipe. I took the model for Raspberry Pi camera case found [here](http://www.thingiverse.com/thing:792444), and adapted it so that the backplate could be fastened to the bottom of the wooden fixture. The model for the adapted backplate can be found [here](https://tinkercad.com/things/4wXPT8hs05X).
+The camera is attached by an HDMI cable running through the pipe. I took the model for Raspberry Pi camera case found [here](http://www.thingiverse.com/thing:792444), and adapted it so that the backplate could be fastened to the bottom of the wooden fixture. The model for the adapted backplate can be found [here](https://tinkercad.com/things/4wXPT8hs05X).
 
 <center>{% include image name="cameraclose.jpg" alt="A close up image of the camera inside of a 3D printed case." %}</center>
 {% include caption txt="The camera inside of a 3D printed case." %}
@@ -28,7 +28,7 @@ The camera is attached by a HDMI cable running through the pipe. I took the mode
 # Lights
 ---
 
-The fixture also hold three 3 [Phillips 5000K PAR38 flood lights](http://www.homedepot.com/p/Philips-100W-Equivalent-Daylight-5000K-PAR38-Dimmable-LED-Flood-Light-Bulb-435016/205213868) used to light the chessboard evenly with bright white light. Using high temperature lighting ensured colors remained accurate which is import for the [computer vision algorithms](/details/vision.html).
+The fixture also hold three 3 [Phillips 5000K PAR38 flood lights](http://www.homedepot.com/p/Philips-100W-Equivalent-Daylight-5000K-PAR38-Dimmable-LED-Flood-Light-Bulb-435016/205213868) used to light the chessboard evenly with bright white light. Using high temperature lighting ensured colors remained accurate which is important for the [computer vision algorithms](/details/vision.html).
 
 <center>{% include image name="camera.jpg" alt="The 5000K flood lights surrounding the camera." %}</center>
 {% include caption txt="5000K flood lights surrounding the camera." %}

@@ -10,7 +10,7 @@ next_topic: how the Raspberry Turk sees the chessboard
 # Introduction
 ---
 
-The gripper mechanism is used to pick up and place down chess pieces. It consists of a servo for vertical motion and an electromagnet to hold the pieces.
+The gripper mechanism is used to pick up and place chess pieces. It consists of a servo for vertical motion and an electromagnet to hold the pieces.
 
 <center>{% include image name="gripper.gif" alt="Animation of the gripper picking up and putting down a piece." %}</center>
 
@@ -42,12 +42,12 @@ electromagnet(False) # Off
 # Servo
 ---
 
-The vertical motion, to pick up and drop off pieces, is accomplished with a [gear rack kit](https://www.servocity.com/785-gear-rack-kit-637169) made out of Actobotics from ServoCity. The [Hitec HS-785HB Servo](https://www.servocity.com/hs-785hb-servo) is controlled by the Raspberry Pi via adjusting the PWM signal of a GPIO pin. This rotation moves the aluminum beam that the electromagnet is attached to. Relevant code for controlling the gripper servo in Python is found in [gripper.py](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/motion/gripper.py).
+The vertical motion, to pick up and put down pieces, is accomplished with a [gear rack kit](https://www.servocity.com/785-gear-rack-kit-637169) made out of Actobotics from ServoCity. The [Hitec HS-785HB Servo](https://www.servocity.com/hs-785hb-servo) is controlled by the Raspberry Pi via adjusting the PWM signal of a GPIO pin. This rotation moves the aluminum beam that the electromagnet is attached to. Relevant code for controlling the gripper servo in Python is found in [gripper.py](https://github.com/joeymeyer/raspberryturk/blob/master/raspberryturk/embedded/motion/gripper.py).
 
 <center>{% include image name="servocircuit.png" alt="Circuit diagram of the servo connected to the Raspberry Pi." %}</center>
 
 <center>{% include image name="gearrackkit.gif" alt="Animation of the gear rack kit servo in motion." %}</center>
-{% include caption txt="Animation of the gear rack kit moving a piece up/down." %}
+{% include caption txt="Animation of the gear rack kit moving a piece up/down" %}
 
 # Pieces
 ---

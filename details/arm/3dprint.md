@@ -10,7 +10,7 @@ next_topic: how the gripper works
 # Introduction
 ---
 
-Actobotics are structural and motion components for robotics projects. The components are made out of high grade aluminum or stainless steel and all use standardized sizes, and connect with ease, a lot like legos. I bought all of my Actobotic parts for the Raspberry Turk through [ServoCity](https://www.servocity.com/actobotics), who were incredibly helpful throughout the process when I had questions.
+Actobotics are structural and motion components for robotics projects. The components are made of high grade aluminum or stainless steel and all use standardized sizes, and connect with ease, a lot like legos. I bought all of my Actobotic parts for the Raspberry Turk through [ServoCity](https://www.servocity.com/actobotics), who were incredibly helpful throughout the process when I had questions.
 
 Actobotics work extremely well when used with other Actobotics components, but not always with other products. I ran into this problem when trying to use Dynamixel AX-12A servos with the arm made out of Actobotics. There were two problems:
 
@@ -42,7 +42,7 @@ The arm of the robot is made out of [aluminum channel](https://www.servocity.com
 
 <center>{% include image name="channeldiagram.jpg" alt="Diagram of side of Actobotics aluminum channel." width="40%" %}{% include image name="f3.png" alt="Diagram of F3 Bioloid Frame." width="40%" %}</center>
 
-This created a problem, there is no way to securely attach the servos to the arm using any standard parts. To solve this, for one of the servos I tried forcefully screwing small screws through the holes in the aluminum channel and into the hard engineering plastic of the Dynamixel side plate. This worked well for the servo at the elbow.
+This created a problem–there was no way to securely attach the servos to the arm using any standard parts. To solve this, for one of the servos I tried forcefully screwing small screws through the holes in the aluminum channel and into the hard engineering plastic of the Dynamixel side plate. This worked well for the servo at the elbow.
 
 <center>{% include image name="ax12sideplatescrews.jpg" alt="AX-12A screwed into F3 side plate through aluminum channel holes." %}</center>
 {% include caption txt="Screwed through the aluminum channel directly into the AX-12A side plate." %}
@@ -50,7 +50,7 @@ This created a problem, there is no way to securely attach the servos to the arm
 However, I couldn't get a tight enough fit when I tried this same technique on the servo at the base of the arm. I decided to go back to the 3D printing to solve this problem. Thankfully, [ServoCity provides STEP files for ALL of the Actobotic components the sell](https://www.servocity.com/step-files). This is just one more reason using Actobotics is such a joy, any component or adapter you need a custom part for, the STEP files are all there for you to work with. Trossen Robotics also provides excellent STEP files for the Dynamixel AX-12A. This allowed me to put the pieces together and build a custom side plate that secured the servo tightly to the aluminum channel. I printed this on Shapeways in the strong & flexible plastic material.
 
 <center>{% include stl.html name="dynamixel_sideplate.html" %}</center>
-<center>{% include image name="3darmbase.gif" alt="Animation of base of the arm, including servo attached via 3D printed side plate, modeled in CAD." %}</center>
-{% include caption txt="Visualization of the side plate alone and attached the servo/channel." %}
+<center>{% include image name="3darmbase.gif" alt="Animation of base of the arm, including servo attached via 3D printed side plate, modeled in CAD" %}</center>
+{% include caption txt="Visualization of the side plate alone and attached the servo/channel" %}
 
 The side plate design is publicly available [here](https://tinkercad.com/things/5F510Eoo51f).

@@ -50,11 +50,11 @@ I used [this power supply](https://www.amazon.com/gp/product/B0194B7XT6/ref=oh_a
 >
 > [– _Trossen Robotics_](http://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx)
 
-The ability to get and set the speed and position among other things is one of the reasons I choose the AX-12A for this project. After using it it quickly became one of my favorites to work it.
+The ability to get and set the speed and position among other things is one of the reasons I choose the AX-12A for this project. After using it, it quickly became one of my favorites to work with.
 
-The servo connects to the Arbotix-M microcontroller via a 3 pin cable. There are several ports for multiple servos on the microcontroller, but you can also daisy chain them because each servo has two 3 pin connectors on the back. Each Dynamixel added to the chain will require it's own ID which can be set before adding it to the chain. Instructions on how to set the ID using the DynaManager software can be found [here](http://learn.trossenrobotics.com/arbotix/1-using-the-tr-dynamixel-servo-tool#&panel1-1). Alternatively it is possible to set the ID directly with setting the ID register using Python as described below.
+The servo connects to the Arbotix-M microcontroller via a 3 pin cable. There are several ports for multiple servos on the microcontroller, but you can also daisy chain them because each servo has two 3 pin connectors on the back. Each Dynamixel added to the chain will require it's own ID which can be set before adding it to the chain. Instructions on how to set the ID using the DynaManager software can be found [here](http://learn.trossenrobotics.com/arbotix/1-using-the-tr-dynamixel-servo-tool#&panel1-1). Alternatively, it is possible to set the ID directly with setting the ID register using Python as described below.
 
-<center>{% include image name="ax12chain.png" alt="Diagram of chain of Dynamixel servos." %}</center>
+<center>{% include image name="ax12chain.png" alt="Diagram of chain of Dynamixel servos" %}</center>
 {% include caption txt="Dynamixels chained together." %}
 
 # Raspberry Pi
