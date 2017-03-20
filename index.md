@@ -27,4 +27,4 @@ The Mechanical Turk won most of its games, touring through Europe and America an
 
 > Wherever seen it has been an object of intense curiosity, to all persons who think. Yet the question of its modus operandi is still undetermined. Nothing has been written on this topic which can be considered as decisive — and accordingly we find every where men of mechanical genius, of great general acuteness, and discriminative understanding, who make no scruple in pronouncing the Automaton a pure machine, unconnected with human agency in its movements, and consequently, beyond all comparison, the most astonishing of the inventions of mankind. And such it would undoubtedly be, were they right in their supposition.
 >
-> – [Edgan Allan Poe](http://www.eapoe.org/works/essays/maelzel.htm)
+> – [Edgar Allan Poe](http://www.eapoe.org/works/essays/maelzel.htm)
