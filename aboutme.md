@@ -9,7 +9,7 @@ My name is Joey Meyer. I am an experienced software engineer with an extensive b
 
 Website: [www.joeymeyer.com](http://www.joeymeyer.com)  
 Github: [joeymeyer](https://github.com/joeymeyer)  
-Twitter: [@joey_meyer](https://twitter.com/joeymeyer)  
+Twitter: [@joey_meyer](https://twitter.com/joey_meyer)  
 Email: [contact@joeymeyer.com](mailto:contact@joeymeyer.com)  
 Resume: [Joey Meyer Resume.pdf](/download/Joey Meyer Resume.pdf)  
 Keybase: [joeymeyer](https://keybase.io/joeymeyer)  
