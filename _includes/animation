@@ -1,0 +1,14 @@
+{% capture videoPath %}/assets/video/{{ include.name }}.mp4{% endcapture %}
+{% capture cls %}{% if include.class %}{{ include.class }}{% else %}page-image{% endif %}{% endcapture %}
+{% if include.caption %}
+<figure class="{{ cls }}">
+	<video muted playsinline autoplay="autoplay" loop="loop"{% if include.width %} style="max-width: {{ include.width }}"{% endif %}>
+	  <source src="{{ videoPath }}" type="video/mp4" />
+	</video>
+	<figcaption>{{ include.caption }}</figcaption>
+</figure>
+{% else %}
+<video muted playsinline class="{{ cls }}" autoplay="autoplay" loop="loop"{% if include.width %} style="max-width: {{ include.width }}"{% endif %}>
+  <source src="{{ videoPath }}" type="video/mp4" />
+</video>
+{% endif %}

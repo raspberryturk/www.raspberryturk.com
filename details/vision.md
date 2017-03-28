@@ -39,7 +39,7 @@ The camera is controlled via Python OpenCV running on the Raspberry Pi. The raw 
 
 In order to build a system that can recognize which pieces are on which squares of a chessboard by analyzing an image we need a large dataset to train and validate a computer vision model. In order to collect a dataset I wrote several scripts and sat for hours moving pieces to capture multiple placements for every piece in every square on the board. More information on how the dataset was collected can be found [here](/details/vision/data_collection.html).
 
-<center>{% include image name="collection.gif" alt="Timelapse of dataset collection." %}</center>
+<center>{% include animation name="collection" alt="Timelapse of dataset collection." %}</center>
 {% include caption txt="Collection of a previous dataset over several hours." %}
 
 Each image is then cut into 64 smaller images and stored with the appropriate label.

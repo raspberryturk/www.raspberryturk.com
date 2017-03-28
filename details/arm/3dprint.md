@@ -30,7 +30,7 @@ I was able to solve both of these problems by 3D printing parts to fit the job.
 Using [Tinkercad](https://www.tinkercad.com/), an easy browser-based 3D design and modeling tool, I was able to design a small plate with a cylinder popping out of it which fit the job.
 
 <center>{% include stl.html name="dynamixel_adapter.html" width="75%" %}</center>
-<center>{% include image name="3dservo.gif" alt="Animation of the adapter connecting the pinion gear to the servo." %}</center>
+<center>{% include animation name="3dservo" alt="Animation of the adapter connecting the pinion gear to the servo." %}</center>
 {% include caption txt="Visualization of the adapter alone and on the servo." %}
 
 The design is publicly available [here](https://tinkercad.com/things/hqfiNy3yeVC), and can be adapted for your own purposes. I first printed several copies using ABS material at a local makers workshop. This was great for prototyping and gave me a final design. The ABS material fit well but cracked easily under the stress caused by torsion when moving the entire arm. I took the final design and uploaded it to [Shapeways](https://www.shapeways.com) and printed it in stainless steel. You can order it [here](https://www.shapeways.com/product/MWLKVSM23/dynamixel-adapter?optionId=61806374&li=shop-inventory), or modify/print it however you like using the [.STL](/download/dynamixel_adapter.stl).
@@ -50,7 +50,7 @@ This created a problem–there was no way to securely attach the servos to the a
 However, I couldn't get a tight enough fit when I tried this same technique on the servo at the base of the arm. I decided to go back to the 3D printing to solve this problem. Thankfully, [ServoCity provides STEP files for ALL of the Actobotic components they sell](https://www.servocity.com/step-files). This is just one more reason using Actobotics is such a joy, any component or adapter you need a custom part for, the STEP files are all there for you to work with. Trossen Robotics also provides excellent STEP files for the Dynamixel AX-12A. This allowed me to put the pieces together and build a custom side plate that secured the servo tightly to the aluminum channel. I printed this on Shapeways in the strong & flexible plastic material.
 
 <center>{% include stl.html name="dynamixel_sideplate.html" %}</center>
-<center>{% include image name="3darmbase.gif" alt="Animation of base of the arm, including servo attached via 3D printed side plate, modeled in CAD" %}</center>
+<center>{% include animation name="3darmbase" alt="Animation of base of the arm, including servo attached via 3D printed side plate, modeled in CAD" %}</center>
 {% include caption txt="Visualization of the side plate alone and attached the servo/channel" %}
 
 The side plate design is publicly available [here](https://tinkercad.com/things/5F510Eoo51f).
