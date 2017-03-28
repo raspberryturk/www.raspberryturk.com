@@ -1,10 +1,6 @@
 <div class="legend container">
 	<div class="turk-hero col-sm-6">
-		<center>
-			<video playsinline muted autoplay="autoplay" loop="loop">
-			  <source src="/assets/video/turkhero.mp4" type="video/mp4" />
-			</video>
-		</center>
+		<center><img src="/assets/img/turkhero.gif" alt="Animation of the Raspberry Turk moving a piece." /></center>
 	</div>
 	<div class="legend-nav col-sm-6">
 		<h1>How it works:</h1>
@@ -30,16 +26,12 @@
 	</div>
 </div>
 <script>
-var isSafari = navigator.userAgent.search("Safari") >= 0;
-var iOS = navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i);
-var isChrome = navigator.userAgent.search("Chrome") >= 0;
-var isFirefox = navigator.userAgent.search("Firefox") >= 0;
-var isOpera = navigator.userAgent.search("OPR") >= 0;
+var isSafari = navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0;
 
 var legend = document.querySelector(".legend");
-if ((isSafari || isChrome) && !iOS && !isOpera) {
-	legend.style.backgroundColor = "#a3aabd";
+if (isSafari) {
+	legend.style.backgroundColor = "#a8b0c3";
 } else {
-	legend.style.backgroundColor = "#989fb7";
+	legend.style.backgroundColor = "#979FB7";
 }
 </script>

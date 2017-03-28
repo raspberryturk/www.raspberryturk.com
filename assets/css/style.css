@@ -108,10 +108,6 @@ article .share .gplus:hover {
   margin: 9px;
 }
 
-.navbar-brand video {
-  margin: 9px;
-}
-
 .navbar-brand h1 {
   display: inline;
   font-size: 1em;
@@ -127,7 +123,7 @@ article .share .gplus:hover {
 
 .navbar-brand-subnav { padding:0; margin:0; width:100%; float:left; position: absolute; bottom: 0;}
 .navbar-brand-subnav ul { padding:0; margin:0; list-style:none; border:0; float:left; width: 100%;}
-.navbar-brand-subnav ul li { float:left; margin-left: 5.16%; margin-right: 5.16%; margin-bottom: 9px; padding:0; border:0; width: 23%; text-align: center;text-transform: uppercase;}
+.navbar-brand-subnav ul li { float:left; margin-left: 5.16%; margin-right: 5.16%; margin-bottom: 9px; padding:0; border:0; width: 23%; text-align: center;text-transform: uppercase;b}
 .navbar-brand-subnav ul li a { float:left; margin:0; padding:0; text-decoration:none; font-size: 1em; color: white;}
 
 .notebook-header {
@@ -188,12 +184,6 @@ hr {
   height: 572px;
 }
 
-.turk-hero video {
-  margin-left: 25%;
-  width: 322px;
-  height: 572px;
-}
-
 .legend-nav {
   margin-top: 60px;
 }
@@ -230,18 +220,10 @@ hr {
   .turk-hero img {
     margin-left: 0%;
   }
-  .turk-hero video {
-    margin-left: 0%;
-  }
 }
 
 @media only screen and (max-width: 915px) {
   .turk-hero img {
-    margin-top: 80px;
-    width: 270px;
-    height: 480px;
-  }
-  .turk-hero video {
     margin-top: 80px;
     width: 270px;
     height: 480px;
@@ -430,12 +412,6 @@ a:hover {
     width: 100%;
     height: auto;
   }
-  .turk-hero video {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 100%;
-    height: auto;
-  }
   .legend-nav {
     padding-top: 0px;
     margin-top: 0px;
@@ -464,12 +440,6 @@ a:hover {
     width: auto;
     max-width: 100%;
   }
-  video {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: auto;
-    max-width: 100%;
-  }
   div {
     overflow: scroll;
     max-width: 100%;
@@ -484,10 +454,6 @@ a:hover {
     max-width: 100% !important;
   }
   .page-header img {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .page-header video {
     margin-top: 0;
     margin-bottom: 0;
   }

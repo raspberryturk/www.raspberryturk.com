@@ -12,7 +12,7 @@ next_topic: how the Raspberry Turk sees the chessboard
 
 The gripper mechanism is used to pick up and place chess pieces. It consists of a servo for vertical motion and an electromagnet to hold the pieces.
 
-<center>{% include animation name="gripper" alt="Animation of the gripper picking up and putting down a piece." %}</center>
+<center>{% include image name="gripper.gif" alt="Animation of the gripper picking up and putting down a piece." %}</center>
 
 # Electromagnet
 ---
@@ -46,7 +46,7 @@ The vertical motion, to pick up and put down pieces, is accomplished with a [gea
 
 <center>{% include image name="servocircuit.png" alt="Circuit diagram of the servo connected to the Raspberry Pi." %}</center>
 
-<center>{% include animation name="gearrackkit" alt="Animation of the gear rack kit servo in motion." %}</center>
+<center>{% include image name="gearrackkit.gif" alt="Animation of the gear rack kit servo in motion." %}</center>
 {% include caption txt="Animation of the gear rack kit moving a piece up/down" %}
 
 # Pieces

@@ -12,7 +12,7 @@ next_topic: controlling an AX-12A servo with Python on a Raspberry Pi
 
 The arm is primarily made out of Actobotics components. It is a Selective Compliance Articulated Robot Arm ([SCARA](https://en.wikipedia.org/wiki/SCARA)) which means that it can move freely in the XY-axes remaining fixed in the Z-axis. The motion is controlled by the rotation of two servos which are attached to gears at the base of each link of the arm. At the end of the arm is another servo which moves a beam up and down. At the bottom of the beam is an electromagnet that can be dynamically activated to lift the chess pieces. The base of the arm is fixed to the table-top box.
 
-<center>{% include animation name="overheadarm" alt="Animation of the arm capturing a piece." %}</center>
+<center>{% include image name="overheadarm.gif" alt="Animation of the arm capturing a piece." %}</center>
 {% include caption txt="The arm capturing a piece" %}
 
 # Structure
@@ -43,5 +43,5 @@ I used [AX-12 Dynamixel Servos](http://www.trossenrobotics.com/dynamixel-ax-12-r
 
 The actual gripper mechanism works by activating an electromagnet at the bottom of a vertically moving beam. Each chess piece has a small metal dowel fitted in a drilled hole on the top. More information on how the gripper mechanism works, and the code that runs it can be found [here](/details/arm/gripper.html).
 
-<center>{% include animation name="gripper" alt="Animation of the gripper picking up and putting down a piece." %}</center>
+<center>{% include image name="gripper.gif" alt="Animation of the gripper picking up and putting down a piece." %}</center>
 {% include caption txt="The gripper in motion" %}
