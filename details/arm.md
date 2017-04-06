@@ -26,7 +26,7 @@ Actobotics are like really high quality, strong legos for robotics projects; I h
 # Servos
 ---
 
-I used [AX-12 Dynamixel Servos](http://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx) for the core motion of the arm. Dyanmixels fit the job well for several reasons:
+I used [AX-12 Dynamixel Servos](http://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx) for the core motion of the arm. Dynamixels fit the job well for several reasons:
 
 1. Relatively powerful, especially to move the arm as needed
 2. Easy read/write to registers via serial interface

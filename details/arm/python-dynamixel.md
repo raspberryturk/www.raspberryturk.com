@@ -4,13 +4,13 @@ layout: page
 image: arbotixmwide.jpg
 image_alt: Abstract image of Arbotic-M Robocontroller.
 next_url: /details/arm/3dprint.html
-next_topic: using Actobotics and Dyanmixels together
+next_topic: using Actobotics and Dynamixels together
 ---
 
 # Introduction
 ---
 
-The arm of the Raspberry Turk is powered by two Dyanmixel servos. The servos are controlled by Python running on a Raspberry Pi. This page is a brief guide on how to the servos are setup.
+The arm of the Raspberry Turk is powered by two Dynamixel servos. The servos are controlled by Python running on a Raspberry Pi. This page is a brief guide on how to the servos are setup.
 
 # Components
 ---

@@ -25,7 +25,7 @@ I was able to solve both of these problems by 3D printing parts to fit the job.
 # Connecting an Acotobtics Pinion Gear to a Dynamixel
 ---
 
-<center>{% include image name="ax12adiagram.png" alt="Diagram of AX-12A Dyanmixel Servo." width="40%" %}{% include image name="piniondiagram.png" alt="Diagram of Actobotics pinion gear." width="40%" %}</center>
+<center>{% include image name="ax12adiagram.png" alt="Diagram of AX-12A Dynamixel Servo." width="40%" %}{% include image name="piniondiagram.png" alt="Diagram of Actobotics pinion gear." width="40%" %}</center>
 
 Using [Tinkercad](https://www.tinkercad.com/), an easy browser-based 3D design and modeling tool, I was able to design a small plate with a cylinder popping out of it which fit the job.
 
