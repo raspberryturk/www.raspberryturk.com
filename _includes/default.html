@@ -5,7 +5,13 @@
 	<title>{{ page.title }}</title>
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
+	<meta property="og:description" content="{{ page.description }}">
 	{% endif %}
+	{% if page.share_image %}
+	<meta property="og:image" content="{{ site.BASE_PATH }}/assets/img/{{ page.share_image }}">
+	{% endif %}
+	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:url" content="{{ site.url }}">
 	<meta name="author" content="{{ site.author }}">
 
 	<!-- Enable responsive viewport -->

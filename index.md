@@ -2,6 +2,7 @@
 title: Raspberry Turk
 layout: legend
 description: The Raspberry Turk is a robot that can play chess—it's entirely open source, based on Raspberry Pi, and inspired by the 18th century chess playing machine, the Mechanical Turk.
+share_image: placingbishop.jpg
 ---
 
 # Introduction
